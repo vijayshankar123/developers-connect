@@ -1,0 +1,7 @@
+{
+  "mongoURI":
+    "mongodb+srv://socialapp:socialapp@socialapp-7pptc.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "kolla",
+  "githubClientId": "9b93a3010b8c1e474b8d",
+  "githubSecret": "19bf7f4af3ef76423eb45637987acc9e8dba48f7"
+}

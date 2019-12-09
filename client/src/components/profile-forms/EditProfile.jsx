@@ -145,7 +145,6 @@ const EditProfile = ({
             name="skills"
             value={skills}
             onChange={e => onChange(e)}
-            required
           />
           <small className="form-text">
             Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)

@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import { createProfile } from "../../actions/profileAction";
 
-const CreateProfile = ({ createProfile, history }) => {
+const CreateProfile = ({
+  profile: { profile, loading },
+  createProfile,
+  history
+}) => {
   const [formData, setFormData] = useState({
     company: "",
     website: "",
@@ -228,4 +232,9 @@ const CreateProfile = ({ createProfile, history }) => {
   );
 };
 
-export default connect(null, { createProfile })(withRouter(CreateProfile));
+const mapStateToProps = state => ({
+  profile: state.profile
+});
+export default connect(mapStateToProps, { createProfile })(
+  withRouter(CreateProfile)
+);

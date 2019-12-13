@@ -23,6 +23,7 @@ const Landing = ({ isAuthenticated }) => {
             <Link to="/login" className="btn btn-light">
               Login
             </Link>
+            <p>(Use email : guest@gmail.com password : guest123)</p>
           </div>
         </div>
       </div>
